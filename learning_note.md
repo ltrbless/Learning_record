@@ -614,6 +614,8 @@ $$
 min{\frac{1}{2}||x||^2} \\
 s.t. \ \ \ y^{(i)}( {w_d^Tx^{(i)} + b_d} ) \ge 1
 $$
+这是一个含有不等式约束的凸二次规划问题	。 
+
 这个Hard SVM受离值点的数比较敏感，使用Soft SVM可以解决。
 
 ### Soft SVM
@@ -629,6 +631,7 @@ min{\frac{1}{2}||x||^2} + C\sum_{i = 1}^m \zeta_i^2\\
 s.t. \ \ \ y^{(i)}( {w_d^Tx^{(i)} + b_d} ) \ge 1 - \zeta_i  \ \ \ \zeta_i \ge 0
 $$
 
+C越大容错空间就越小，C越小容错空间就越大。
 
 ## 决策树
 
@@ -671,3 +674,21 @@ K-Means 聚类算法的大致意思就是“物以类聚，人以群分”，风
 
 ## 集成学习
 
+集成学习主要是指通过训练若干个个体学习器，每个单独的学习器可能不强，但是通过一定的结合策略，往往可以形成一个强学习器。
+
+![1592528468056](./picture11.png)
+
+模式识别：所谓模式识别的问题就是用计算的方法根据[样本](https://baike.baidu.com/item/%E6%A0%B7%E6%9C%AC/19974592)的特征将样本划分到一定的类别中去。
+
+数据挖掘十大算法：
+
+1. 决策树
+2. K-Means
+3. SVM
+4. [The Apriori algorithm](https://blog.csdn.net/qq_36523839/article/details/82191677)
+5. [最大期望(EM)算法](http://blog.csdn.net/aladdina/archive/2009/05/01/4141114.aspx)
+6. [PageRank](http://blog.csdn.net/aladdina/archive/2009/05/01/4141120.aspx)
+7. [AdaBoost](https://blog.csdn.net/qq_36523839/article/details/81904966)
+8. KNN
+9. [Naive Bayes](https://blog.csdn.net/qq_36523839/article/details/81487626)
+10. [CART: 分类与回归树](https://blog.csdn.net/qq_36523839/article/details/82080076)
